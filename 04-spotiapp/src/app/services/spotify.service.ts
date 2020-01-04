@@ -23,6 +23,7 @@ export class SpotifyService {
       }));
   }
 
+  /*busqueda de artista servicios de spotify*/
   getArtista(termino: string) {
     const headers = new HttpHeaders({
       'Authorization': 'Bearer BQCP57O4g66mgBEJTPaKmZuvUgPBvMDNCa4N69icq8KBugYnlMwUQN4vIDSOnfieFMFRV0fGXF0Fj76Rm9s'
