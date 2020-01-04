@@ -1,0 +1,16 @@
+<h1 *ngIf="heroes && heroes.length > 0 ">Buscador de heroes: <small>{{terminoBusqueda}}</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast" *ngIf="!heroes || heroes.length === 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No existen resultados con el termino: {{terminoBusqueda}}
+    </div>
+  </div>
+
+</div>
+
+<div class="card-columns">
+  <app-heroe-targeta (heroeSeleccionado)="verHeroe($event)" [heroe]="h" [indice]="i" *ngFor="let h of heroes;let i = index"></app-heroe-targeta>
+
+</div>
