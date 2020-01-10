@@ -13,10 +13,15 @@ export class HomeComponent implements OnInit {
 
   nuevas_canciones : any[]=[];
 
+  loading:boolean;
+
   constructor(private spotify: SpotifyService) {
    
+    this.loading=true;
+
     this.spotify.getNewRealeses().subscribe((data:any) => {
       this.nuevas_canciones=data;
+      this.loading=false;
     });
 
   }

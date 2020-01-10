@@ -10,6 +10,8 @@ import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { TargetaComponent } from './components/shared/targeta/targeta.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 //services
 //import { SpotifyService } from './services/spotify.service';
@@ -21,7 +23,9 @@ import { NoimagePipe } from './pipes/noimage.pipe';
     SearchComponent,
     ArtistComponent,
     NavbarComponent,
-    NoimagePipe
+    NoimagePipe,
+    TargetaComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
